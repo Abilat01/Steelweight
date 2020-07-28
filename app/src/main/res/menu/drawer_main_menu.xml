@@ -21,7 +21,7 @@
             android:icon="@drawable/ic_info" />
         <item
             android:title="@string/exit"
-            android:id="id_exit"
+            android:id="@+id/id_exit"
             android:icon="@drawable/ic_exit" />
 
 
