@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Steel weight</string>
+    <string name="raz">Разминка</string>
+    <string name="program">Программы</string>
+    <string name="exercises">Упражнения</string>
+    <string name="info">Информация</string>
+    <string name="exit">Выход</string>
 </resources>
