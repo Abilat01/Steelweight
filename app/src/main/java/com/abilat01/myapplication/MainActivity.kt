@@ -24,15 +24,13 @@ class MainActivity : AppCompatActivity(),
             R.id.id_program -> Toast.makeText(this, "Программы", Toast.LENGTH_LONG).show()
             R.id.id_exercises -> Toast.makeText(this, "Упражнения", Toast.LENGTH_LONG).show()
             R.id.id_info -> intentInfoActivity()
-            R.id.id_exit -> exitMenu() //первый из 5 готов)
+            R.id.id_exit -> finish() //первый из 5 готов)
         }
 
         return true
     }
 
-    fun exitMenu(){
-        finish()
-    }
+
 
     fun intentInfoActivity(){
         val intentGo = Intent(this, ActivityInfo::class.java)
