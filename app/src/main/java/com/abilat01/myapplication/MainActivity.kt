@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity(),
         when (item.itemId) {
             R.id.id_raz -> Toast.makeText(this, "Разминка", Toast.LENGTH_LONG).show()
             R.id.id_program -> Toast.makeText(this, "Программы", Toast.LENGTH_LONG).show()
-            R.id.id_exercises -> Toast.makeText(this, "Упражнения", Toast.LENGTH_LONG).show()
+            R.id.id_exercises -> intentExercisesMainGo()
             R.id.id_info -> intentInfoActivity()
             R.id.id_exit -> finish() //первый из 5 готов)
         }
@@ -35,6 +35,11 @@ class MainActivity : AppCompatActivity(),
     fun intentInfoActivity(){
         val intentGo = Intent(this, ActivityInfo::class.java)
         startActivity(intentGo)
+    }
+
+    fun intentExercisesMainGo(){
+        val intenGoEx = Intent(this, ExercisesMain::class.java)
+        startActivity(intenGoEx)
     }
 
 }
